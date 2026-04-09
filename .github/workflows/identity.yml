@@ -1,0 +1,16 @@
+name: Identity
+on:
+push:
+branches: [main]
+pull_request:
+workflow_dispatch:
+jobs:
+identity:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- name: Verify required root files
+run: |
+test -f README.md
+test -f LICENSE
+test -f .gitignore
