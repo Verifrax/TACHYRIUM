@@ -1,15 +1,24 @@
 name: Determinism Check
 on:
-push:
-branches: [main]
-pull_request:
-workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 jobs:
-determinism:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v4
-- name: Verify repository tree is stable
-run: |
-find . -maxdepth 3 -type f | LC_ALL=C sort > /tmp/tree.txt
-test -s /tmp/tree.txt
+  determinism:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify repository tree is stable
+        run: |
+          find . -maxdepth 3 -type f | LC_ALL=C sort > /tmp/tree.txt
+          test -s /tmp/tree.txt
+
+      - name: Validate canonical fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/candidate-object.valid.json
+
+      - name: Run contract test
+        run: |
+          python3 tests/test_candidate_object_contract.py
