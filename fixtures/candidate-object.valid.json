@@ -1,0 +1,16 @@
+{
+  "kind": "candidate",
+  "source_surface": "TACHYRIUM",
+  "target_surface": "VERIFRAX-SURFACE",
+  "status": "subordinate",
+  "summary": "Bounded host-copy candidate for review.",
+  "payload": {
+    "subject": "host-copy",
+    "intent": "draft",
+    "scope": "bounded"
+  },
+  "notes": [
+    "review required",
+    "non-authoritative"
+  ]
+}
