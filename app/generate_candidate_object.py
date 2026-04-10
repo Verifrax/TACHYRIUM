@@ -4,24 +4,26 @@ from __future__ import annotations
 import json
 import sys
 
+from object_builder import build_object
+
 
 def build_candidate(subject: str, target_surface: str, summary: str) -> dict:
-    return {
-        "kind": "candidate",
-        "source_surface": "TACHYRIUM",
-        "target_surface": target_surface,
-        "status": "subordinate",
-        "summary": summary,
-        "payload": {
+    return build_object(
+        kind="candidate",
+        source_surface="TACHYRIUM",
+        target_surface=target_surface,
+        status="subordinate",
+        summary=summary,
+        payload={
             "subject": subject,
             "intent": "draft",
-            "scope": "bounded"
+            "scope": "bounded",
         },
-        "notes": [
+        notes=[
             "review required",
-            "non-authoritative"
-        ]
-    }
+            "non-authoritative",
+        ],
+    )
 
 
 def main(argv: list[str]) -> int:
@@ -30,8 +32,7 @@ def main(argv: list[str]) -> int:
         return 2
 
     subject, target_surface, summary = argv[1], argv[2], argv[3]
-    obj = build_candidate(subject, target_surface, summary)
-    print(json.dumps(obj, indent=2))
+    print(json.dumps(build_candidate(subject, target_surface, summary), indent=2))
     return 0
 
 
