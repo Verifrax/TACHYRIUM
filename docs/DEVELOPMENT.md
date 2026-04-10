@@ -14,7 +14,7 @@ Use the repository `Makefile` for the normalized local workflow.
 
 ```bash
 make validate-fixtures
-````
+```
 
 ### Run the unified smoke suite
 
@@ -26,6 +26,12 @@ make smoke
 
 ```bash
 make all
+```
+
+### Run the unified bounded CLI
+
+```bash
+python3 app/tachyrium_cli.py pipeline host-copy
 ```
 
 ## Rule
