@@ -1,0 +1,16 @@
+{
+  "kind": "summary",
+  "source_surface": "TACHYRIUM",
+  "target_surface": "TACHYRIUM",
+  "status": "bounded",
+  "summary": "Subject host-copy classified for bounded cognition handling.",
+  "payload": {
+    "subject": "host-copy",
+    "classification": "projection",
+    "scope": "bounded"
+  },
+  "notes": [
+    "review allowed",
+    "non-authoritative"
+  ]
+}
