@@ -31,6 +31,10 @@ jobs:
         run: |
           python3 cli/validate_candidate_object.py fixtures/topology-summary.valid.json
 
+      - name: Validate contradiction fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/contradiction-analysis.valid.json
+
       - name: Run contract test
         run: |
           python3 tests/test_candidate_object_contract.py
@@ -54,3 +58,7 @@ jobs:
       - name: Run topology smoke test
         run: |
           python3 tests/test_topology_smoke.py
+
+      - name: Run contradiction smoke test
+        run: |
+          python3 tests/test_contradiction_smoke.py
