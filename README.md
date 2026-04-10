@@ -1,5 +1,9 @@
 # TACHYRIUM
 
+[![Release](https://img.shields.io/github/v/release/Verifrax/TACHYRIUM?display_name=tag)](https://github.com/Verifrax/TACHYRIUM/releases/tag/v0.1.0)
+
+**Release:** `v0.1.0` — bounded-foundation is live.
+
 **Sovereign cognition infrastructure for lawful acceleration across the Verifrax stack.**
 
 ## What this repository is
