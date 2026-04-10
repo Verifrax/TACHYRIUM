@@ -44,12 +44,13 @@ TACHYRIUM    = cognition
 * operator amplification
 * bounded structured candidate generation
 * bounded operator briefings
+* bounded cognition pipelines
 
 ## Repository boundary
 
 TACHYRIUM may read law, accepted state, contradiction sets, hosts, repos, packages, artifacts, and evidence surfaces.
 
-TACHYRIUM may generate bounded drafts, plans, routing proposals, analyses, summaries, and operator-facing structures.
+TACHYRIUM may generate bounded drafts, plans, routing proposals, analyses, summaries, briefings, and operator-facing structures.
 
 TACHYRIUM may not define law, store accepted truth, issue authority, execute sovereign runtime work, determine verification truth, or override any active-truth surface.
 
@@ -59,29 +60,37 @@ TACHYRIUM may not define law, store accepted truth, issue authority, execute sov
 
 * `TACHYRIUM.md`
 * `RUNTIME.md`
-* `docs/INDEX.md`
+* `RELEASE.md`
+* `CHANGELOG.md`
 
-### Contracts
+### Contracts and boundary
 
 * `docs/interfaces/INTERFACE_CONTRACT.md`
 * `docs/contracts/INPUT_CONTRACT.md`
 * `docs/contracts/OUTPUT_CONTRACT.md`
+* `docs/contracts/BOUNDARY_MANIFEST.md`
 * `prompts/PROMPT_CONTRACT.md`
 
-### Internal structure
+### Internal structure and manifests
 
+* `docs/INDEX.md`
 * `docs/planes/PLANES.md`
+* `docs/REPOSITORY_INVENTORY.md`
 * `schemas/candidate-object.schema.json`
+* `schemas/release-manifest.json`
+* `schemas/repository-inventory.json`
 
-### Validation
+### Validation and development
 
 * `cli/validate_candidate_object.py`
-* `fixtures/`
-* `tests/`
+* `tests/run_all_smoke.py`
+* `Makefile`
 * `.github/workflows/determinism-check.yml`
 
-### Bounded cognition seeds
+### Bounded executable surfaces
 
+* `app/object_builder.py`
+* `app/tachyrium_cli.py`
 * `app/generate_candidate_object.py`
 * `app/route_candidate_target.py`
 * `app/classify_subject.py`
@@ -90,9 +99,15 @@ TACHYRIUM may not define law, store accepted truth, issue authority, execute sov
 * `app/build_briefing.py`
 * `app/run_pipeline.py`
 
-### Example outputs
+### Operator and governance surfaces
 
-* `outputs/examples/`
+* `docs/OPERATOR_HANDBOOK.md`
+* `docs/QUICKSTART.md`
+* `docs/TESTING.md`
+* `docs/DEVELOPMENT.md`
+* `docs/MAINTENANCE.md`
+* `CONTRIBUTING.md`
+* `CODE_OF_CONDUCT.md`
 
 ## State of the repository
 
@@ -102,25 +117,17 @@ TACHYRIUM currently contains:
 * runtime and interface boundaries
 * input and output contracts
 * prompt contract
-* machine-readable candidate schema
-* validation and smoke-test foundation
+* machine-readable candidate and release manifests
+* validation and unified smoke-test foundation
 * generator, router, classifier, topology, contradiction, briefing, and pipeline seeds
+* unified CLI and shared object builder
+* operator, governance, maintenance, testing, and development guides
 
-All current executable surfaces remain subordinate and bounded.
-
-## Adjacent repositories
-
-* `SYNTAGMARIUM` — constitutional law
-* `ORBISTIUM` — canonical state
-* `CONSONORIUM` — reconciliation runtime
-* `VERIFRAX` — authored source and evidence root
-* `AUCTORISEAL` — authority-of-record
-* `CORPIFORM` — governed execution
-* `VERIFRAX-SURFACE` — shared form and projection infrastructure
+All current executable surfaces remain subordinate, bounded, and reviewable.
 
 ## Status
 
-Active bounded foundation. Doctrine, contracts, schemas, validation, and first cognition pipeline seeds are established.
+Active bounded foundation with normalized docs, validation, CLI, and shared builder structure.
 
 ## License
 

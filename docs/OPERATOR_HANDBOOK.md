@@ -8,34 +8,35 @@ This handbook gives the operator-facing use model for the current bounded TACHYR
 
 Operators may use TACHYRIUM to:
 
-- generate bounded candidate objects
-- route bounded work to adjacent surfaces
-- classify bounded subjects
-- map bounded topology classes
-- detect bounded contradictions
-- build bounded briefings
-- run bounded cognition pipelines
+* generate bounded candidate objects
+* route bounded work to adjacent surfaces
+* classify bounded subjects
+* map bounded topology classes
+* detect bounded contradictions
+* build bounded briefings
+* run bounded cognition pipelines
+* dispatch bounded operations through the unified CLI
 
 ## What operators may not do
 
 Operators may not use TACHYRIUM to:
 
-- author constitutional law
-- publish accepted world-state
-- issue authority-of-record
-- execute governed acts of record
-- emit final enforcement outcomes
-- emit final verification verdicts
+* author constitutional law
+* publish accepted world-state
+* issue authority-of-record
+* execute governed acts of record
+* emit final enforcement outcomes
+* emit final verification verdicts
 
 ## Current executable entrypoints
 
-- `python3 app/generate_candidate_object.py <subject> <target_surface> <summary>`
-- `python3 app/route_candidate_target.py <subject> <summary>`
-- `python3 app/classify_subject.py <subject>`
-- `python3 app/map_topology.py <repo_name>`
-- `python3 app/detect_contradiction.py <subject> <current> <proposed>`
-- `python3 app/build_briefing.py <subject> <classification> <target_surface>`
-- `python3 app/run_pipeline.py <subject>`
+* `python3 app/tachyrium_cli.py generate <subject> <target_surface> <summary>`
+* `python3 app/tachyrium_cli.py route <subject> <summary>`
+* `python3 app/tachyrium_cli.py classify <subject>`
+* `python3 app/tachyrium_cli.py topology <repo_name>`
+* `python3 app/tachyrium_cli.py contradiction <subject> <current> <proposed>`
+* `python3 app/tachyrium_cli.py briefing <subject> <classification> <target_surface>`
+* `python3 app/tachyrium_cli.py pipeline <subject>`
 
 ## Review rule
 

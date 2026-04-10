@@ -6,22 +6,22 @@ This guide defines the current bounded testing surface for TACHYRIUM.
 
 ## Validation entrypoints
 
-### Canonical fixture validation
+### Validate all fixtures
 
 ```bash
-python3 cli/validate_candidate_object.py fixtures/candidate-object.valid.json
-python3 cli/validate_candidate_object.py fixtures/router-candidate.valid.json
-python3 cli/validate_candidate_object.py fixtures/classification-summary.valid.json
-python3 cli/validate_candidate_object.py fixtures/topology-summary.valid.json
-python3 cli/validate_candidate_object.py fixtures/contradiction-analysis.valid.json
-python3 cli/validate_candidate_object.py fixtures/briefing.valid.json
-python3 cli/validate_candidate_object.py fixtures/pipeline-briefing.valid.json
-````
+make validate-fixtures
+```
 
-### Unified smoke run
+### Run unified smoke run
 
 ```bash
-python3 tests/run_all_smoke.py
+make smoke
+```
+
+### Run full local bounded verification
+
+```bash
+make all
 ```
 
 ## Test rule

@@ -10,18 +10,20 @@ This repository is in bounded foundation state.
 
 It already contains:
 
-- doctrine
-- contracts
-- schema
-- validation
-- smoke tests
-- generator seed
-- router seed
-- classifier seed
-- topology seed
-- contradiction seed
-- briefing seed
-- bounded cognition pipeline seed
+* doctrine
+* contracts
+* schema and manifests
+* validation
+* unified smoke tests
+* unified CLI
+* shared object builder
+* generator seed
+* router seed
+* classifier seed
+* topology seed
+* contradiction seed
+* briefing seed
+* bounded cognition pipeline seed
 
 ## What this release is
 
@@ -29,11 +31,11 @@ A lawful cognition-foundation release.
 
 ## What this release is not
 
-- production sovereign runtime
-- authority system
-- execution engine
-- verification engine
-- proof publisher
+* production sovereign runtime
+* authority system
+* execution engine
+* verification engine
+* proof publisher
 
 ## Promotion rule
 
