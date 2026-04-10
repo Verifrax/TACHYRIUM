@@ -19,6 +19,10 @@ jobs:
         run: |
           python3 cli/validate_candidate_object.py fixtures/candidate-object.valid.json
 
+      - name: Validate router fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/router-candidate.valid.json
+
       - name: Run contract test
         run: |
           python3 tests/test_candidate_object_contract.py
@@ -30,3 +34,7 @@ jobs:
       - name: Run generator smoke test
         run: |
           python3 tests/test_generator_smoke.py
+
+      - name: Run router smoke test
+        run: |
+          python3 tests/test_router_smoke.py
