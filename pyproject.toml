@@ -26,8 +26,11 @@ classifiers = [
 Homepage = "https://github.com/Verifrax/TACHYRIUM"
 Repository = "https://github.com/Verifrax/TACHYRIUM"
 
+[project.scripts]
+tachyrium = "tachyrium_pkg.cli:main"
+
 [tool.setuptools]
-py-modules = []
+packages = ["tachyrium_pkg"]
 
 [tool.tachyrium]
 class = "sovereign-cognition-infrastructure"
