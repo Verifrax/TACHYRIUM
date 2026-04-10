@@ -15,6 +15,7 @@ COMMANDS = [
     ["python3", "tests/test_contradiction_smoke.py"],
     ["python3", "tests/test_briefing_smoke.py"],
     ["python3", "tests/test_pipeline_smoke.py"],
+    ["python3", "tests/test_cli_smoke.py"],
 ]
 
 
