@@ -35,6 +35,10 @@ jobs:
         run: |
           python3 cli/validate_candidate_object.py fixtures/contradiction-analysis.valid.json
 
+      - name: Validate briefing fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/briefing.valid.json
+
       - name: Run contract test
         run: |
           python3 tests/test_candidate_object_contract.py
@@ -62,3 +66,7 @@ jobs:
       - name: Run contradiction smoke test
         run: |
           python3 tests/test_contradiction_smoke.py
+
+      - name: Run briefing smoke test
+        run: |
+          python3 tests/test_briefing_smoke.py
