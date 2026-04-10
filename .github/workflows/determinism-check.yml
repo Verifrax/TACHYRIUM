@@ -39,6 +39,10 @@ jobs:
         run: |
           python3 cli/validate_candidate_object.py fixtures/briefing.valid.json
 
+      - name: Validate pipeline fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/pipeline-briefing.valid.json
+
       - name: Run contract test
         run: |
           python3 tests/test_candidate_object_contract.py
@@ -70,3 +74,7 @@ jobs:
       - name: Run briefing smoke test
         run: |
           python3 tests/test_briefing_smoke.py
+
+      - name: Run pipeline smoke test
+        run: |
+          python3 tests/test_pipeline_smoke.py
