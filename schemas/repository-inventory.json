@@ -1,0 +1,37 @@
+{
+  "name": "TACHYRIUM",
+  "version": "0.1.0",
+  "inventory": {
+    "core": [
+      "README.md",
+      "TACHYRIUM.md",
+      "RUNTIME.md",
+      "RELEASE.md",
+      "CHANGELOG.md"
+    ],
+    "contracts": [
+      "docs/interfaces/INTERFACE_CONTRACT.md",
+      "docs/contracts/INPUT_CONTRACT.md",
+      "docs/contracts/OUTPUT_CONTRACT.md",
+      "docs/contracts/BOUNDARY_MANIFEST.md"
+    ],
+    "machine_readable": [
+      "schemas/candidate-object.schema.json",
+      "schemas/release-manifest.json"
+    ],
+    "validation": [
+      "cli/validate_candidate_object.py",
+      "tests/test_candidate_object_contract.py",
+      "tests/test_candidate_object_schema_smoke.py"
+    ],
+    "seeds": [
+      "app/generate_candidate_object.py",
+      "app/route_candidate_target.py",
+      "app/classify_subject.py",
+      "app/map_topology.py",
+      "app/detect_contradiction.py",
+      "app/build_briefing.py",
+      "app/run_pipeline.py"
+    ]
+  }
+}
