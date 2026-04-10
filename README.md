@@ -45,6 +45,8 @@ TACHYRIUM    = cognition
 * bounded structured candidate generation
 * bounded operator briefings
 * bounded cognition pipelines
+* bounded console dispatch
+* bounded package-level install surface
 
 ## Repository boundary
 
@@ -83,7 +85,9 @@ TACHYRIUM may not define law, store accepted truth, issue authority, execute sov
 ### Validation and development
 
 * `cli/validate_candidate_object.py`
+* `cli/check_python_runtime.py`
 * `tests/run_all_smoke.py`
+* `tests/test_install_smoke.py`
 * `Makefile`
 * `.github/workflows/determinism-check.yml`
 
@@ -99,12 +103,21 @@ TACHYRIUM may not define law, store accepted truth, issue authority, execute sov
 * `app/build_briefing.py`
 * `app/run_pipeline.py`
 
+### Package surface
+
+* `pyproject.toml`
+* `tachyrium_pkg/__init__.py`
+* `tachyrium_pkg/cli.py`
+
 ### Operator and governance surfaces
 
 * `docs/OPERATOR_HANDBOOK.md`
 * `docs/QUICKSTART.md`
 * `docs/TESTING.md`
 * `docs/DEVELOPMENT.md`
+* `docs/INSTALL.md`
+* `docs/ENVIRONMENT.md`
+* `docs/PACKAGING.md`
 * `docs/MAINTENANCE.md`
 * `CONTRIBUTING.md`
 * `CODE_OF_CONDUCT.md`
@@ -118,16 +131,17 @@ TACHYRIUM currently contains:
 * input and output contracts
 * prompt contract
 * machine-readable candidate and release manifests
-* validation and unified smoke-test foundation
+* validation, runtime checks, install smoke, and unified smoke-test foundation
 * generator, router, classifier, topology, contradiction, briefing, and pipeline seeds
 * unified CLI and shared object builder
-* operator, governance, maintenance, testing, and development guides
+* installable package CLI surface
+* operator, governance, maintenance, testing, development, install, environment, and packaging guides
 
 All current executable surfaces remain subordinate, bounded, and reviewable.
 
 ## Status
 
-Active bounded foundation with normalized docs, validation, CLI, and shared builder structure.
+Active bounded foundation with normalized docs, validation, CLI, packaging, install smoke, and environment surfaces.
 
 ## License
 
