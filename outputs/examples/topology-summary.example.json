@@ -1,0 +1,16 @@
+{
+  "kind": "summary",
+  "source_surface": "TACHYRIUM",
+  "target_surface": "TACHYRIUM",
+  "status": "bounded",
+  "summary": "Repository SYNTAGMARIUM mapped to topology class law.",
+  "payload": {
+    "repo": "SYNTAGMARIUM",
+    "topology_class": "law",
+    "scope": "bounded"
+  },
+  "notes": [
+    "review allowed",
+    "non-authoritative"
+  ]
+}
