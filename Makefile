@@ -1,6 +1,9 @@
 PYTHON := python3
 
-.PHONY: validate-fixtures smoke install-smoke all
+.PHONY: doctor validate-fixtures smoke install-smoke all
+
+doctor:
+	$(PYTHON) cli/check_python_runtime.py
 
 validate-fixtures:
 	$(PYTHON) cli/validate_candidate_object.py fixtures/candidate-object.valid.json
@@ -17,4 +20,4 @@ smoke:
 install-smoke:
 	$(PYTHON) tests/test_install_smoke.py
 
-all: validate-fixtures smoke install-smoke
+all: doctor validate-fixtures smoke install-smoke

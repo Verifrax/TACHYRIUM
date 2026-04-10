@@ -11,6 +11,15 @@ steps:
 - uses: actions/checkout@v4
 
 ```
+  - name: Set up Python 3.11
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.11"
+
+  - name: Check runtime
+    run: |
+      python3 cli/check_python_runtime.py
+
   - name: Verify repository tree is stable
     run: |
       find . -maxdepth 3 -type f | LC_ALL=C sort > /tmp/tree.txt
