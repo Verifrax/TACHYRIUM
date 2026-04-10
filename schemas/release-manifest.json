@@ -1,0 +1,24 @@
+{
+  "name": "TACHYRIUM",
+  "version": "0.1.0",
+  "class": "sovereign-cognition-infrastructure",
+  "status": "bounded-foundation",
+  "allowed_functions": [
+    "candidate-generation",
+    "routing",
+    "classification",
+    "topology-mapping",
+    "contradiction-analysis",
+    "briefing-generation",
+    "bounded-pipeline"
+  ],
+  "forbidden_functions": [
+    "law-authorship",
+    "accepted-state-authorship",
+    "authority-issuance",
+    "governed-execution-of-record",
+    "final-enforcement",
+    "final-verification",
+    "proof-truth-authorship"
+  ]
+}
