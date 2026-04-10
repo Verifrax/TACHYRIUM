@@ -1,3 +1,4 @@
+
 # TACHYRIUM Development Guide
 
 ## Purpose
@@ -9,6 +10,12 @@ This guide gives a single bounded developer workflow for the current repository 
 Use the repository `Makefile` for the normalized local workflow.
 
 ## Commands
+
+### Check runtime compatibility
+
+```bash
+make doctor
+```
 
 ### Validate all fixtures
 
@@ -22,6 +29,12 @@ make validate-fixtures
 make smoke
 ```
 
+### Run install smoke
+
+```bash
+make install-smoke
+```
+
 ### Run full local bounded verification
 
 ```bash
@@ -32,6 +45,12 @@ make all
 
 ```bash
 python3 app/tachyrium_cli.py pipeline host-copy
+```
+
+### Run the package CLI module
+
+```bash
+python3 -m tachyrium_pkg.cli pipeline host-copy
 ```
 
 ## Rule

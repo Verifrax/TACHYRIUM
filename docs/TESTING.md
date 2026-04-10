@@ -1,3 +1,4 @@
+
 # TACHYRIUM Testing Guide
 
 ## Purpose
@@ -5,6 +6,12 @@
 This guide defines the current bounded testing surface for TACHYRIUM.
 
 ## Validation entrypoints
+
+### Check runtime compatibility
+
+```bash
+make doctor
+```
 
 ### Validate all fixtures
 
@@ -16,6 +23,12 @@ make validate-fixtures
 
 ```bash
 make smoke
+```
+
+### Run install smoke
+
+```bash
+make install-smoke
 ```
 
 ### Run full local bounded verification
