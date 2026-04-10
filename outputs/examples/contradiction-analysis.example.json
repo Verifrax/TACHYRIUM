@@ -1,0 +1,18 @@
+{
+  "kind": "analysis",
+  "source_surface": "TACHYRIUM",
+  "target_surface": "TACHYRIUM",
+  "status": "bounded",
+  "summary": "Contradiction analysis completed for repo-role.",
+  "payload": {
+    "subject": "repo-role",
+    "current": "verification",
+    "proposed": "proof-publication",
+    "contradiction_detected": true,
+    "scope": "bounded"
+  },
+  "notes": [
+    "review required",
+    "non-authoritative"
+  ]
+}
