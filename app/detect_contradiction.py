@@ -4,28 +4,29 @@ from __future__ import annotations
 import json
 import sys
 
+from object_builder import build_object
+
 
 def detect(subject: str, current: str, proposed: str) -> dict:
     contradicted = current.strip() != proposed.strip()
-
-    return {
-        "kind": "analysis",
-        "source_surface": "TACHYRIUM",
-        "target_surface": "TACHYRIUM",
-        "status": "bounded",
-        "summary": f"Contradiction analysis completed for {subject}.",
-        "payload": {
+    return build_object(
+        kind="analysis",
+        source_surface="TACHYRIUM",
+        target_surface="TACHYRIUM",
+        status="bounded",
+        summary=f"Contradiction analysis completed for {subject}.",
+        payload={
             "subject": subject,
             "current": current,
             "proposed": proposed,
             "contradiction_detected": contradicted,
-            "scope": "bounded"
+            "scope": "bounded",
         },
-        "notes": [
+        notes=[
             "review required",
-            "non-authoritative"
-        ]
-    }
+            "non-authoritative",
+        ],
+    )
 
 
 def main(argv: list[str]) -> int:

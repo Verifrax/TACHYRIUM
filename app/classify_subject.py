@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import sys
 
+from object_builder import build_object
 
 CLASS_MAP = {
     "host-copy": "projection",
@@ -21,22 +22,22 @@ CLASS_MAP = {
 
 def classify_subject(subject: str) -> dict:
     classification = CLASS_MAP.get(subject, "analysis")
-    return {
-        "kind": "summary",
-        "source_surface": "TACHYRIUM",
-        "target_surface": "TACHYRIUM",
-        "status": "bounded",
-        "summary": f"Subject {subject} classified for bounded cognition handling.",
-        "payload": {
+    return build_object(
+        kind="summary",
+        source_surface="TACHYRIUM",
+        target_surface="TACHYRIUM",
+        status="bounded",
+        summary=f"Subject {subject} classified for bounded cognition handling.",
+        payload={
             "subject": subject,
             "classification": classification,
-            "scope": "bounded"
+            "scope": "bounded",
         },
-        "notes": [
+        notes=[
             "review allowed",
-            "non-authoritative"
-        ]
-    }
+            "non-authoritative",
+        ],
+    )
 
 
 def main(argv: list[str]) -> int:

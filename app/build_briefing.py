@@ -4,25 +4,27 @@ from __future__ import annotations
 import json
 import sys
 
+from object_builder import build_object
+
 
 def build_briefing(subject: str, classification: str, target_surface: str) -> dict:
-    return {
-        "kind": "briefing",
-        "source_surface": "TACHYRIUM",
-        "target_surface": "TACHYRIUM",
-        "status": "bounded",
-        "summary": f"Bounded briefing prepared for {subject}.",
-        "payload": {
+    return build_object(
+        kind="briefing",
+        source_surface="TACHYRIUM",
+        target_surface="TACHYRIUM",
+        status="bounded",
+        summary=f"Bounded briefing prepared for {subject}.",
+        payload={
             "subject": subject,
             "classification": classification,
             "target_surface": target_surface,
-            "scope": "bounded"
+            "scope": "bounded",
         },
-        "notes": [
+        notes=[
             "review required",
-            "non-authoritative"
-        ]
-    }
+            "non-authoritative",
+        ],
+    )
 
 
 def main(argv: list[str]) -> int:

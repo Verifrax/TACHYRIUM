@@ -4,6 +4,8 @@ from __future__ import annotations
 import json
 import sys
 
+from object_builder import build_object
+
 CLASS_MAP = {
     "host-copy": "projection",
     "readme-draft": "projection",
@@ -42,28 +44,24 @@ def route_subject(subject: str) -> str:
 def build_pipeline_result(subject: str) -> dict:
     classification = classify_subject(subject)
     target_surface = route_subject(subject)
-    return {
-        "kind": "briefing",
-        "source_surface": "TACHYRIUM",
-        "target_surface": "TACHYRIUM",
-        "status": "bounded",
-        "summary": f"Bounded pipeline briefing prepared for {subject}.",
-        "payload": {
+    return build_object(
+        kind="briefing",
+        source_surface="TACHYRIUM",
+        target_surface="TACHYRIUM",
+        status="bounded",
+        summary=f"Bounded pipeline briefing prepared for {subject}.",
+        payload={
             "subject": subject,
             "classification": classification,
             "target_surface": target_surface,
-            "pipeline": [
-                "classify",
-                "route",
-                "briefing",
-            ],
+            "pipeline": ["classify", "route", "briefing"],
             "scope": "bounded",
         },
-        "notes": [
+        notes=[
             "review required",
             "non-authoritative",
         ],
-    }
+    )
 
 
 def main(argv: list[str]) -> int:

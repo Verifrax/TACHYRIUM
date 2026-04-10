@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import sys
 
+from object_builder import build_object
 
 REPO_CLASS_MAP = {
     "SYNTAGMARIUM": "law",
@@ -29,22 +30,22 @@ def classify_repo(repo_name: str) -> str:
 
 def build_topology_summary(repo_name: str) -> dict:
     repo_class = classify_repo(repo_name)
-    return {
-        "kind": "summary",
-        "source_surface": "TACHYRIUM",
-        "target_surface": "TACHYRIUM",
-        "status": "bounded",
-        "summary": f"Repository {repo_name} mapped to topology class {repo_class}.",
-        "payload": {
+    return build_object(
+        kind="summary",
+        source_surface="TACHYRIUM",
+        target_surface="TACHYRIUM",
+        status="bounded",
+        summary=f"Repository {repo_name} mapped to topology class {repo_class}.",
+        payload={
             "repo": repo_name,
             "topology_class": repo_class,
-            "scope": "bounded"
+            "scope": "bounded",
         },
-        "notes": [
+        notes=[
             "review allowed",
-            "non-authoritative"
-        ]
-    }
+            "non-authoritative",
+        ],
+    )
 
 
 def main(argv: list[str]) -> int:

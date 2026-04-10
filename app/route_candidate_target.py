@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import sys
 
+from object_builder import build_object
 
 ROUTE_MAP = {
     "host-copy": "VERIFRAX-SURFACE",
@@ -24,22 +25,22 @@ def route_subject(subject: str) -> str:
 
 
 def build_routed_candidate(subject: str, summary: str) -> dict:
-    return {
-        "kind": "candidate",
-        "source_surface": "TACHYRIUM",
-        "target_surface": route_subject(subject),
-        "status": "subordinate",
-        "summary": summary,
-        "payload": {
+    return build_object(
+        kind="candidate",
+        source_surface="TACHYRIUM",
+        target_surface=route_subject(subject),
+        status="subordinate",
+        summary=summary,
+        payload={
             "subject": subject,
             "intent": "route",
-            "scope": "bounded"
+            "scope": "bounded",
         },
-        "notes": [
+        notes=[
             "review required",
-            "non-authoritative"
-        ]
-    }
+            "non-authoritative",
+        ],
+    )
 
 
 def main(argv: list[str]) -> int:
@@ -48,8 +49,7 @@ def main(argv: list[str]) -> int:
         return 2
 
     subject, summary = argv[1], argv[2]
-    obj = build_routed_candidate(subject, summary)
-    print(json.dumps(obj, indent=2))
+    print(json.dumps(build_routed_candidate(subject, summary), indent=2))
     return 0
 
 
