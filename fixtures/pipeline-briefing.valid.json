@@ -1,0 +1,22 @@
+{
+  "kind": "briefing",
+  "source_surface": "TACHYRIUM",
+  "target_surface": "TACHYRIUM",
+  "status": "bounded",
+  "summary": "Bounded pipeline briefing prepared for host-copy.",
+  "payload": {
+    "subject": "host-copy",
+    "classification": "projection",
+    "target_surface": "VERIFRAX-SURFACE",
+    "pipeline": [
+      "classify",
+      "route",
+      "briefing"
+    ],
+    "scope": "bounded"
+  },
+  "notes": [
+    "review required",
+    "non-authoritative"
+  ]
+}
