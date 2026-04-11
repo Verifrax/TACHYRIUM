@@ -6,6 +6,11 @@
 
 **Sovereign cognition infrastructure for lawful acceleration across the Verifrax stack.**
 
+## Terminal planes
+
+- **[ANAGNORIUM](https://github.com/Verifrax/ANAGNORIUM)** — terminal recognition
+- **[REGRESSORIUM](https://github.com/Verifrax/REGRESSORIUM)** — terminal recourse
+
 ## What this repository is
 
 TACHYRIUM is the cognition plane of the Verifrax sovereign stack.
@@ -150,3 +155,11 @@ Active bounded foundation with normalized docs, validation, CLI, packaging, inst
 ## License
 
 Apache License 2.0
+
+## Adjacent sovereign surfaces
+
+This repository is part of the Verifrax sovereign stack and remains bounded relative to:
+
+- **[ANAGNORIUM](https://github.com/Verifrax/ANAGNORIUM)** for terminal recognition
+- **[REGRESSORIUM](https://github.com/Verifrax/REGRESSORIUM)** for terminal recourse
+
