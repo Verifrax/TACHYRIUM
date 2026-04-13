@@ -1,10 +1,6 @@
 # TACHYRIUM
 
-[![Release](https://img.shields.io/github/v/release/Verifrax/TACHYRIUM?display_name=tag)](https://github.com/Verifrax/TACHYRIUM/releases/tag/v0.1.0)
-
-**Release:** `v0.1.0` — bounded-foundation is live.
-
-**Sovereign cognition infrastructure for lawful acceleration across the Verifrax stack.**
+TACHYRIUM is the Verifrax sovereign-cognition boundary: the public surface that defines bounded machine cognition, interpretation, and ambiguity-to-structure conversion across the stack without becoming constitutional law, canonical world-state, reconciliation, authority issuance, governed execution, verification, proof publication, or intake.
 
 ## Proof artifacts
 
@@ -26,155 +22,115 @@ This repository is part of the VERIFRAX proof perimeter.
 - **[ANAGNORIUM](https://github.com/Verifrax/ANAGNORIUM)** — terminal recognition
 - **[REGRESSORIUM](https://github.com/Verifrax/REGRESSORIUM)** — terminal recourse
 
-## What this repository is
-
-TACHYRIUM is the cognition plane of the Verifrax sovereign stack.
-
-It transforms ambiguity into bounded, lawful, machine-legible candidates across the Verifrax world without becoming law, accepted truth, authority-of-record, governed execution, deterministic verification truth, or active-truth override.
-
-## What this repository is not
-
-TACHYRIUM is not:
-
-- constitutional law
-- accepted world-state memory
-- authority-of-record
-- governed execution runtime
-- deterministic verification truth
-- proof publication
-- public verification
-- intake
-- docs
-- status
-- a primitive truth dimension
-
-## Stack position
-
-```text
-SYNTAGMARIUM = law
-ORBISTIUM    = state
-CONSONORIUM  = reconciliation
-TACHYRIUM    = cognition
-````
-
-## Primary responsibilities
-
-* intent crystallization
-* ambiguity compression
-* topology cognition
-* contradiction diagnosis
-* lawful routing
-* projection intelligence
-* operator amplification
-* bounded structured candidate generation
-* bounded operator briefings
-* bounded cognition pipelines
-* bounded console dispatch
-* bounded package-level install surface
-
-## Repository boundary
-
-TACHYRIUM may read law, accepted state, contradiction sets, hosts, repos, packages, artifacts, and evidence surfaces.
-
-TACHYRIUM may generate bounded drafts, plans, routing proposals, analyses, summaries, briefings, and operator-facing structures.
-
-TACHYRIUM may not define law, store accepted truth, issue authority, execute sovereign runtime work, determine verification truth, or override any active-truth surface.
-
-## Current repository surfaces
-
-### Core doctrine
-
-* `TACHYRIUM.md`
-* `RUNTIME.md`
-* `RELEASE.md`
-* `CHANGELOG.md`
-
-### Contracts and boundary
-
-* `docs/interfaces/INTERFACE_CONTRACT.md`
-* `docs/contracts/INPUT_CONTRACT.md`
-* `docs/contracts/OUTPUT_CONTRACT.md`
-* `docs/contracts/BOUNDARY_MANIFEST.md`
-* `prompts/PROMPT_CONTRACT.md`
-
-### Internal structure and manifests
-
-* `docs/INDEX.md`
-* `docs/planes/PLANES.md`
-* `docs/REPOSITORY_INVENTORY.md`
-* `schemas/candidate-object.schema.json`
-* `schemas/release-manifest.json`
-* `schemas/repository-inventory.json`
-
-### Validation and development
-
-* `cli/validate_candidate_object.py`
-* `cli/check_python_runtime.py`
-* `tests/run_all_smoke.py`
-* `tests/test_install_smoke.py`
-* `Makefile`
-* `.github/workflows/determinism-check.yml`
-
-### Bounded executable surfaces
-
-* `app/object_builder.py`
-* `app/tachyrium_cli.py`
-* `app/generate_candidate_object.py`
-* `app/route_candidate_target.py`
-* `app/classify_subject.py`
-* `app/map_topology.py`
-* `app/detect_contradiction.py`
-* `app/build_briefing.py`
-* `app/run_pipeline.py`
-
-### Package surface
-
-* `pyproject.toml`
-* `tachyrium_pkg/__init__.py`
-* `tachyrium_pkg/cli.py`
-
-### Operator and governance surfaces
-
-* `docs/OPERATOR_HANDBOOK.md`
-* `docs/QUICKSTART.md`
-* `docs/TESTING.md`
-* `docs/DEVELOPMENT.md`
-* `docs/INSTALL.md`
-* `docs/ENVIRONMENT.md`
-* `docs/PACKAGING.md`
-* `docs/MAINTENANCE.md`
-* `CONTRIBUTING.md`
-* `CODE_OF_CONDUCT.md`
-
-## State of the repository
-
-TACHYRIUM currently contains:
-
-* constitutional cognition doctrine
-* runtime and interface boundaries
-* input and output contracts
-* prompt contract
-* machine-readable candidate and release manifests
-* validation, runtime checks, install smoke, and unified smoke-test foundation
-* generator, router, classifier, topology, contradiction, briefing, and pipeline seeds
-* unified CLI and shared object builder
-* installable package CLI surface
-* operator, governance, maintenance, testing, development, install, environment, and packaging guides
-
-All current executable surfaces remain subordinate, bounded, and reviewable.
-
 ## Status
 
-Active bounded foundation with normalized docs, validation, CLI, packaging, install smoke, and environment surfaces.
+Active public sovereign cognition boundary with normalized docs, validation, CLI, packaging, install smoke, and environment surfaces.
 
-## License
+## Boundary
 
-Apache License 2.0
+This repository owns bounded sovereign cognition only.
+
+Cognition here means machine-legible interpretation, structure formation, ambiguity reduction, and bounded reasoning surfaces inside the Verifrax system.
+
+It does not author constitutional law.
+It does not hold canonical world-state.
+It does not perform reconciliation.
+It does not issue authority objects.
+It does not execute.
+It does not verify.
+It does not publish proof as proof authority.
+It does not operate intake.
+It does not replace adjacent sovereign boundaries.
+
+## What it does
+
+- defines the public cognition surface of TACHYRIUM
+- states what bounded sovereign cognition means inside the Verifrax system
+- preserves cognition language as a bounded sovereign function
+- converts ambiguity into lawful machine-legible structure without becoming law
+- provides a clean cognition boundary for adjacent repositories and public readers
+
+## What it does not do
+
+- not constitutional doctrine; that belongs to SYNTAGMARIUM
+- not canonical world-state; that belongs to ORBISTIUM
+- not reconciliation or repair; that belongs to CONSONORIUM
+- not authority issuance; that belongs to AUCTORISEAL
+- not governed execution; that belongs to CORPIFORM
+- not public verification; that belongs to VERIFRAX-verify
+- not proof publication; that belongs to proof
+- not intake; that belongs to apply
+- not terminal recognition; that belongs to ANAGNORIUM
+- not terminal recourse; that belongs to REGRESSORIUM
 
 ## Adjacent sovereign surfaces
 
-This repository is part of the Verifrax sovereign stack and remains bounded relative to:
+- `SYNTAGMARIUM` defines constitutional law and doctrine
+- `ORBISTIUM` defines canonical world-state
+- `CONSONORIUM` defines reconciliation / repair / projection
+- `AUCTORISEAL` defines authority issuance
+- `CORPIFORM` defines governed execution
+- `VERIFRAX-verify` defines public verification
+- `proof` defines public proof publication
+- `apply` defines intake
 
-- **[ANAGNORIUM](https://github.com/Verifrax/ANAGNORIUM)** for terminal recognition
-- **[REGRESSORIUM](https://github.com/Verifrax/REGRESSORIUM)** for terminal recourse
+SYNTAGMARIUM governs doctrine.
+ORBISTIUM carries canonical state.
+CONSONORIUM reconciles.
+TACHYRIUM cognizes.
 
+That separation must remain explicit.
+
+## Public surface
+
+The public surface of this repository is its repository identity, README boundary, CLI, packaging, validation, and any explicitly published cognition materials carried by this repository.
+
+Publication here is not doctrine.
+Publication here is not state.
+Publication here is not reconciliation.
+Publication here is not authority issuance.
+Publication here is not execution.
+Publication here is not verification.
+Publication here is not proof publication.
+
+## Package / host / repo truth
+
+Repository truth for TACHYRIUM lives in this repository.
+
+If a package, site, or host is attached, those surfaces must remain subordinate to the bounded repository role declared here unless and until the system explicitly states otherwise.
+
+## Cognition meaning in-system
+
+Cognition in-system means the stack can point to TACHYRIUM and say that a bounded machine-cognition surface, interpretation surface, or structure-forming surface belongs to this boundary.
+
+Cognition here interprets.
+Cognition here does not legislate.
+Cognition here does not execute.
+Cognition here does not verify.
+
+That does not by itself mean:
+
+- the result became constitutional law
+- the result became canonical world-state
+- the result was reconciled
+- the result issued authority
+- the result was executed
+- the result was verified as truth
+- the result became proof authority
+
+Cognition is bounded machine structure, not sovereign overlap.
+
+## Not this
+
+TACHYRIUM is not the constitutional source of truth.
+TACHYRIUM is not canonical world-state.
+TACHYRIUM is not reconciliation machinery.
+TACHYRIUM is not authority issuance.
+TACHYRIUM is not execution.
+TACHYRIUM is not verification.
+TACHYRIUM is not proof publication.
+TACHYRIUM is not intake.
+
+## License
+
+Apache License Version 2.0
