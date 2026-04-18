@@ -45,6 +45,7 @@ It does not replace adjacent sovereign boundaries.
 ## What it does
 
 - defines the public cognition surface of TACHYRIUM
+- publishes explicit cognition doctrine through `COGNITION.md`
 - states what bounded sovereign cognition means inside the Verifrax system
 - preserves cognition language as a bounded sovereign function
 - converts ambiguity into lawful machine-legible structure without becoming law
@@ -83,7 +84,7 @@ That separation must remain explicit.
 
 ## Public surface
 
-The public surface of this repository is its repository identity, README boundary, CLI, packaging, validation, and any explicitly published cognition materials carried by this repository.
+The public surface of this repository is its repository identity, README boundary, `COGNITION.md`, CLI, packaging, validation, and any explicitly published cognition materials carried by this repository.
 
 Publication here is not doctrine.
 Publication here is not state.
