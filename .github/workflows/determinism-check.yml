@@ -1,64 +1,63 @@
 name: Determinism Check
+
 on:
-push:
-branches: [main]
-pull_request:
-workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
 jobs:
-determinism:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v4
+  determinism:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-```
-  - name: Set up Python 3.11
-    uses: actions/setup-python@v5
-    with:
-      python-version: "3.11"
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-  - name: Check runtime
-    run: |
-      python3 cli/check_python_runtime.py
+      - name: Check runtime
+        run: |
+          python3 cli/check_python_runtime.py
 
-  - name: Verify repository tree is stable
-    run: |
-      find . -maxdepth 3 -type f | LC_ALL=C sort > /tmp/tree.txt
-      test -s /tmp/tree.txt
+      - name: Verify repository tree is stable
+        run: |
+          find . -maxdepth 3 -type f | LC_ALL=C sort > /tmp/tree.txt
+          test -s /tmp/tree.txt
 
-  - name: Validate canonical fixture
-    run: |
-      python3 cli/validate_candidate_object.py fixtures/candidate-object.valid.json
+      - name: Validate canonical fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/candidate-object.valid.json
 
-  - name: Validate router fixture
-    run: |
-      python3 cli/validate_candidate_object.py fixtures/router-candidate.valid.json
+      - name: Validate router fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/router-candidate.valid.json
 
-  - name: Validate classification fixture
-    run: |
-      python3 cli/validate_candidate_object.py fixtures/classification-summary.valid.json
+      - name: Validate classification fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/classification-summary.valid.json
 
-  - name: Validate topology fixture
-    run: |
-      python3 cli/validate_candidate_object.py fixtures/topology-summary.valid.json
+      - name: Validate topology fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/topology-summary.valid.json
 
-  - name: Validate contradiction fixture
-    run: |
-      python3 cli/validate_candidate_object.py fixtures/contradiction-analysis.valid.json
+      - name: Validate contradiction fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/contradiction-analysis.valid.json
 
-  - name: Validate briefing fixture
-    run: |
-      python3 cli/validate_candidate_object.py fixtures/briefing.valid.json
+      - name: Validate briefing fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/briefing.valid.json
 
-  - name: Validate pipeline fixture
-    run: |
-      python3 cli/validate_candidate_object.py fixtures/pipeline-briefing.valid.json
+      - name: Validate pipeline fixture
+        run: |
+          python3 cli/validate_candidate_object.py fixtures/pipeline-briefing.valid.json
 
-  - name: Run unified smoke suite
-    run: |
-      python3 tests/run_all_smoke.py
+      - name: Run unified smoke suite
+        run: |
+          python3 tests/run_all_smoke.py
 
-  - name: Run install smoke test
-    run: |
-      python3 tests/test_install_smoke.py
-```
-
+      - name: Run install smoke test
+        run: |
+          python3 tests/test_install_smoke.py
