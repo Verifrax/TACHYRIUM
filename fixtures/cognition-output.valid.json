@@ -1,0 +1,33 @@
+{
+  "object_type": "COGNITION_OUTPUT",
+  "schema_version": "0.1.0",
+  "output_id": "tachyrium-output-topology-0001",
+  "generated_at": "2026-04-19T13:16:59Z",
+  "input_class": "repository-surface",
+  "output_class": "topology-summary",
+  "status": "review-required",
+  "summary": "Topology summary emitted as subordinate cognition only.",
+  "payload": {
+    "subject": "TACHYRIUM repository surface",
+    "finding": "bounded cognition surface remains subordinate to law, state, verification, recognition, and recourse",
+    "recommended_target": "human-review"
+  },
+  "boundary_assertions": {
+    "not-law": true,
+    "not-state": true,
+    "not-authority": true,
+    "not-execution": true,
+    "not-verification": true,
+    "not-recognition": true,
+    "not-recourse": true,
+    "not-proof": true,
+    "not-intake": true,
+    "reviewable-subordinate-output": true
+  },
+  "downstream_review_surface": "human-review",
+  "source_refs": [
+    "README.md",
+    "COGNITION.md",
+    "docs/contracts/BOUNDARY_MANIFEST.md"
+  ]
+}

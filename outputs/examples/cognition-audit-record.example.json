@@ -1,0 +1,31 @@
+{
+  "object_type": "COGNITION_AUDIT_RECORD",
+  "schema_version": "0.1.0",
+  "audit_id": "tachyrium-audit-example-0001",
+  "timestamp": "2026-04-19T13:16:59Z",
+  "input_class": "operator-request",
+  "requested_output_class": "recourse-object",
+  "decision": "rejected",
+  "resolved_output_class": "none",
+  "rejection_reason": "would-assign-terminal-recourse",
+  "boundary_zone": "outside-tachyrium-boundary",
+  "sovereign_collision_flags": {
+    "law": false,
+    "state": false,
+    "authority": false,
+    "execution": false,
+    "verification": false,
+    "recognition": false,
+    "recourse": true,
+    "proof": false,
+    "intake": false
+  },
+  "source_refs": [
+    "contracts/boundary-policy.json",
+    "schemas/cognition-audit-record.schema.json"
+  ],
+  "notes": [
+    "Terminal recourse is outside the lawful cognition boundary.",
+    "Request must move to REGRESSORIUM after lawful recognition."
+  ]
+}

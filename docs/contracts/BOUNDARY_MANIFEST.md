@@ -50,4 +50,14 @@ Every executable surface in this repository must remain subordinate, reviewable,
 
 ## Enforcement principle
 
-If a future surface would require sovereign truth, authority, execution legitimacy, or final verification judgment, it is out of scope for TACHYRIUM.
+If a future surface would require sovereign truth, authority, execution legitimacy, or final verification judgment, it is out of scope for TACHYRIUM.\n\n## Machine-readable boundary objects
+
+The active machine-readable boundary object for this repository is `contracts/boundary-policy.json`.
+
+The validating schemas are:
+
+- `schemas/boundary-policy.schema.json`
+- `schemas/cognition-output.schema.json`
+- `schemas/cognition-audit-record.schema.json`
+
+These objects exist to make the cognition boundary inspectable as data, not only as prose.

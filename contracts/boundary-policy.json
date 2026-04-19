@@ -1,0 +1,76 @@
+{
+  "object_type": "BOUNDARY_POLICY",
+  "surface": "TACHYRIUM",
+  "schema_version": "0.1.0",
+  "state_type": "ACTIVE_TRUTH",
+  "role": "bounded-sovereign-cognition",
+  "allowed_inputs": [
+    "constitutional-law-reference",
+    "accepted-state-reference",
+    "reconciliation-report",
+    "repository-surface",
+    "host-surface",
+    "package-surface",
+    "evidence-surface",
+    "operator-request",
+    "topology-request",
+    "candidate-generation-request"
+  ],
+  "allowed_output_classes": [
+    "briefing",
+    "candidate-object",
+    "classification-summary",
+    "contradiction-analysis",
+    "topology-summary",
+    "routing-candidate",
+    "cognition-output-record",
+    "cognition-audit-record"
+  ],
+  "forbidden_output_classes": [
+    "law-object",
+    "accepted-state-object",
+    "authority-object",
+    "execution-receipt",
+    "verification-verdict",
+    "recognition-object",
+    "recourse-object",
+    "proof-publication-object",
+    "intake-decision-object"
+  ],
+  "required_boundary_assertions": [
+    "not-law",
+    "not-state",
+    "not-authority",
+    "not-execution",
+    "not-verification",
+    "not-recognition",
+    "not-recourse",
+    "not-proof",
+    "not-intake",
+    "reviewable-subordinate-output"
+  ],
+  "rejection_reasons": [
+    "input-class-unsupported",
+    "output-class-unsupported",
+    "would-author-law",
+    "would-mutate-accepted-state",
+    "would-issue-authority",
+    "would-execute-governed-action",
+    "would-emit-verification-verdict",
+    "would-recognize-terminal-truth",
+    "would-assign-terminal-recourse",
+    "would-publish-proof-authority",
+    "would-operate-intake-authority"
+  ],
+  "adjacent_sovereign_surfaces": {
+    "law": "SYNTAGMARIUM",
+    "state": "ORBISTIUM",
+    "reconciliation": "CONSONORIUM",
+    "authority": "AUCTORISEAL",
+    "execution": "CORPIFORM",
+    "verification": "VERIFRAX",
+    "recognition": "ANAGNORIUM",
+    "recourse": "REGRESSORIUM"
+  },
+  "review_rule": "subordinate-output-requires-downstream-review"
+}
