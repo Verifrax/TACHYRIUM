@@ -1,0 +1,32 @@
+{
+  "object_type": "COGNITION_AUDIT_RECORD",
+  "schema_version": "0.1.0",
+  "audit_id": "tachyrium-audit-0001",
+  "timestamp": "2026-04-19T13:16:59Z",
+  "input_class": "repository-surface",
+  "requested_output_class": "verification-verdict",
+  "decision": "rejected",
+  "resolved_output_class": "none",
+  "rejection_reason": "would-emit-verification-verdict",
+  "boundary_zone": "outside-tachyrium-boundary",
+  "sovereign_collision_flags": {
+    "law": false,
+    "state": false,
+    "authority": false,
+    "execution": false,
+    "verification": true,
+    "recognition": false,
+    "recourse": false,
+    "proof": false,
+    "intake": false
+  },
+  "source_refs": [
+    "COGNITION.md",
+    "docs/contracts/BOUNDARY_MANIFEST.md",
+    "docs/contracts/OUTPUT_CONTRACT.md"
+  ],
+  "notes": [
+    "Requested output class crosses the verification boundary.",
+    "Request must leave TACHYRIUM and move to the verification surface."
+  ]
+}

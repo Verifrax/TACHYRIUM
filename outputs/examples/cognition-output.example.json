@@ -1,0 +1,32 @@
+{
+  "object_type": "COGNITION_OUTPUT",
+  "schema_version": "0.1.0",
+  "output_id": "tachyrium-output-briefing-example-0001",
+  "generated_at": "2026-04-19T13:16:59Z",
+  "input_class": "operator-request",
+  "output_class": "briefing",
+  "status": "subordinate",
+  "summary": "Operator briefing prepared as bounded cognition only.",
+  "payload": {
+    "subject": "Boundary object publication",
+    "briefing": "Publish machine-readable policy, typed output schema, and audit record schema before broader rhetoric expansion.",
+    "next_review_target": "human-review"
+  },
+  "boundary_assertions": {
+    "not-law": true,
+    "not-state": true,
+    "not-authority": true,
+    "not-execution": true,
+    "not-verification": true,
+    "not-recognition": true,
+    "not-recourse": true,
+    "not-proof": true,
+    "not-intake": true,
+    "reviewable-subordinate-output": true
+  },
+  "downstream_review_surface": "human-review",
+  "source_refs": [
+    "contracts/boundary-policy.json",
+    "schemas/cognition-output.schema.json"
+  ]
+}

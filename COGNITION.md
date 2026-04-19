@@ -52,6 +52,8 @@ They may include:
 - contradiction analyses
 - topology summaries
 - routing candidates
+- cognition outputs
+- cognition audit records
 
 They must remain reviewable as subordinate cognition and must not be misread as law, accepted truth, authority, execution legitimacy, recognition, recourse, or final verification.
 
@@ -65,8 +67,12 @@ The current public cognition surfaces include:
 - `docs/contracts/BOUNDARY_MANIFEST.md`
 - `docs/contracts/INPUT_CONTRACT.md`
 - `docs/contracts/OUTPUT_CONTRACT.md`
+- `contracts/boundary-policy.json`
 - `docs/interfaces/INTERFACE_CONTRACT.md`
 - `prompts/PROMPT_CONTRACT.md`
+- `schemas/boundary-policy.schema.json`
+- `schemas/cognition-output.schema.json`
+- `schemas/cognition-audit-record.schema.json`
 - `schemas/`
 - `outputs/examples/`
 - `tests/`

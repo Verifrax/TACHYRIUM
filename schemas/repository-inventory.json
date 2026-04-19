@@ -15,14 +15,24 @@
       "docs/contracts/OUTPUT_CONTRACT.md",
       "docs/contracts/BOUNDARY_MANIFEST.md"
     ],
+    "boundary_objects": [
+      "contracts/boundary-policy.json"
+    ],
     "machine_readable": [
       "schemas/candidate-object.schema.json",
-      "schemas/release-manifest.json"
+      "schemas/release-manifest.json",
+      "schemas/boundary-policy.schema.json",
+      "schemas/cognition-output.schema.json",
+      "schemas/cognition-audit-record.schema.json"
     ],
     "validation": [
       "cli/validate_candidate_object.py",
       "tests/test_candidate_object_contract.py",
-      "tests/test_candidate_object_schema_smoke.py"
+      "tests/test_candidate_object_schema_smoke.py",
+      "tests/test_boundary_policy_schema_smoke.py",
+      "tests/test_cognition_output_schema_smoke.py",
+      "tests/test_cognition_audit_schema_smoke.py",
+      "tests/test_cognition_boundary_negative_assertions.py"
     ],
     "seeds": [
       "app/generate_candidate_object.py",

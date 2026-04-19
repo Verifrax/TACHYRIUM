@@ -10,7 +10,8 @@
     "topology-mapping",
     "contradiction-analysis",
     "briefing-generation",
-    "bounded-pipeline"
+    "bounded-pipeline",
+    "bounded-cognition-audit"
   ],
   "forbidden_functions": [
     "law-authorship",
@@ -19,6 +20,10 @@
     "governed-execution-of-record",
     "final-enforcement",
     "final-verification",
-    "proof-truth-authorship"
+    "proof-truth-authorship",
+    "terminal-recognition-of-record",
+    "terminal-recourse-of-record",
+    "proof-publication-of-record",
+    "intake-decision-of-record"
   ]
 }

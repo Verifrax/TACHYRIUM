@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://verifrax.github.io/tachyrium/schemas/cognition-audit-record.schema.json",
+  "title": "TACHYRIUM Cognition Audit Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "object_type",
+    "schema_version",
+    "audit_id",
+    "timestamp",
+    "input_class",
+    "requested_output_class",
+    "decision",
+    "resolved_output_class",
+    "rejection_reason",
+    "boundary_zone",
+    "sovereign_collision_flags",
+    "source_refs",
+    "notes"
+  ],
+  "properties": {
+    "object_type": {
+      "const": "COGNITION_AUDIT_RECORD"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "audit_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "input_class": {
+      "enum": [
+        "constitutional-law-reference",
+        "accepted-state-reference",
+        "reconciliation-report",
+        "repository-surface",
+        "host-surface",
+        "package-surface",
+        "evidence-surface",
+        "operator-request",
+        "topology-request",
+        "candidate-generation-request"
+      ]
+    },
+    "requested_output_class": {
+      "enum": [
+        "briefing",
+        "candidate-object",
+        "classification-summary",
+        "contradiction-analysis",
+        "topology-summary",
+        "routing-candidate",
+        "law-object",
+        "accepted-state-object",
+        "authority-object",
+        "execution-receipt",
+        "verification-verdict",
+        "recognition-object",
+        "recourse-object",
+        "proof-publication-object",
+        "intake-decision-object"
+      ]
+    },
+    "decision": {
+      "enum": [
+        "emitted",
+        "rejected",
+        "redirected"
+      ]
+    },
+    "resolved_output_class": {
+      "enum": [
+        "briefing",
+        "candidate-object",
+        "classification-summary",
+        "contradiction-analysis",
+        "topology-summary",
+        "routing-candidate",
+        "none"
+      ]
+    },
+    "rejection_reason": {
+      "enum": [
+        "not-applicable",
+        "input-class-unsupported",
+        "output-class-unsupported",
+        "would-author-law",
+        "would-mutate-accepted-state",
+        "would-issue-authority",
+        "would-execute-governed-action",
+        "would-emit-verification-verdict",
+        "would-recognize-terminal-truth",
+        "would-assign-terminal-recourse",
+        "would-publish-proof-authority",
+        "would-operate-intake-authority"
+      ]
+    },
+    "boundary_zone": {
+      "enum": [
+        "tachyrium-cognition",
+        "outside-tachyrium-boundary"
+      ]
+    },
+    "sovereign_collision_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "law",
+        "state",
+        "authority",
+        "execution",
+        "verification",
+        "recognition",
+        "recourse",
+        "proof",
+        "intake"
+      ],
+      "properties": {
+        "law": { "type": "boolean" },
+        "state": { "type": "boolean" },
+        "authority": { "type": "boolean" },
+        "execution": { "type": "boolean" },
+        "verification": { "type": "boolean" },
+        "recognition": { "type": "boolean" },
+        "recourse": { "type": "boolean" },
+        "proof": { "type": "boolean" },
+        "intake": { "type": "boolean" }
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
