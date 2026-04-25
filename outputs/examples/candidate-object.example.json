@@ -1,16 +1,37 @@
 {
-  "kind": "candidate",
-  "source_surface": "TACHYRIUM",
-  "target_surface": "VERIFRAX-SURFACE",
-  "status": "subordinate",
-  "summary": "Bounded host-copy candidate for review.",
-  "payload": {
-    "subject": "host-copy",
-    "intent": "draft",
-    "scope": "bounded"
+  "object_type": "tachyrium.candidate_object",
+  "schema_version": "1.0.0",
+  "candidate_id": "candidate-object-example-0001",
+  "status": "DERIVED_PROJECTION",
+  "created_at": "2026-04-25T00:00:00Z",
+  "chamber": "TACHYRIUM",
+  "role": "bounded cognition candidate",
+  "governing_constraints": [
+    "not law",
+    "not accepted state",
+    "not authority",
+    "not execution",
+    "not verification",
+    "not terminal recognition",
+    "not terminal recourse"
+  ],
+  "input_refs": [
+    "SYNTAGMARIUM/claim-classes/",
+    "ORBISTIUM/epochs/current/accepted-epoch-0001.json"
+  ],
+  "candidate": {
+    "summary": "Example bounded candidate object for lawful machine-legible interpretation.",
+    "confidence_class": "candidate_only",
+    "requires_human_or_governed_review": true
   },
-  "notes": [
-    "review required",
-    "non-authoritative"
-  ]
-}\n
+  "output_boundary": {
+    "may_route": true,
+    "may_summarize": true,
+    "may_propose": true,
+    "may_authorize": false,
+    "may_execute": false,
+    "may_verify": false,
+    "may_recognize_terminal_truth": false,
+    "may_assign_recourse": false
+  }
+}
