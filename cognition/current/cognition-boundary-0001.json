@@ -1,0 +1,53 @@
+{
+  "object_type": "CognitionBoundary",
+  "object_id": "cognition-boundary-0001",
+  "repo": "Verifrax/TACHYRIUM",
+  "status": "ACTIVE_CURRENT_BOUNDARY",
+  "subject": "TACHYRIUM bounded cognition output boundary",
+  "purpose": "Record that TACHYRIUM may produce bounded candidate cognition outputs but may not become law, accepted state, authority, execution, verification, recognition, recourse, merge-gate result, or truth of record.",
+  "allowed_output_classes": [
+    "CANDIDATE_ANALYSIS",
+    "AMBIGUITY_COMPRESSION",
+    "TOPOLOGY_EXPLANATION",
+    "CONTRADICTION_SUMMARY",
+    "ROUTE_PROPOSAL",
+    "PROJECTION_DRAFT",
+    "BOUNDARY_RISK_REPORT",
+    "RECOGNITION_READINESS_ASSESSMENT",
+    "RECOURSE_PREREQUISITE_ASSESSMENT"
+  ],
+  "forbidden_output_classes": [
+    "LAW_OBJECT",
+    "ACCEPTED_EPOCH_OBJECT",
+    "AUTHORITY_OBJECT",
+    "EXECUTION_RECEIPT",
+    "VERIFICATION_VERDICT_OF_RECORD",
+    "RECOGNITION_OBJECT_OF_RECORD",
+    "RECOURSE_OBJECT_OF_RECORD",
+    "MERGE_GATE_RESULT"
+  ],
+  "boundary": {
+    "tachyrium_may_make_stack_machine_legible": true,
+    "tachyrium_may_not_let_machines_skip_stack": true,
+    "tachyrium_does_not_author_law": true,
+    "tachyrium_does_not_accept_state": true,
+    "tachyrium_does_not_issue_authority": true,
+    "tachyrium_does_not_execute_governed_actions": true,
+    "tachyrium_does_not_verify_as_record": true,
+    "tachyrium_does_not_recognize_terminal_truth": true,
+    "tachyrium_does_not_assign_recourse": true,
+    "tachyrium_does_not_emit_merge_gate_results": true
+  },
+  "minimum_machine_deference_inputs": [
+    "claim-class admission object",
+    "governing law version",
+    "accepted epoch or state object",
+    "authority object or freeze where relevant",
+    "execution receipt where relevant",
+    "verification result and replay path",
+    "recognition object where relevant",
+    "recourse object where relevant"
+  ],
+  "anti_overread_rule": "Cognition may expose missing public objects; cognition may not socially patch those absences.",
+  "version": "0.1.0"
+}
