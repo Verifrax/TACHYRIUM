@@ -1,0 +1,11 @@
+{
+  "object_type": "CognitionBoundaryIndex",
+  "current": "cognition-boundary-0001",
+  "objects": [
+    {
+      "object_id": "cognition-boundary-0001",
+      "path": "cognition/current/cognition-boundary-0001.json",
+      "status": "ACTIVE_CURRENT_BOUNDARY"
+    }
+  ]
+}
