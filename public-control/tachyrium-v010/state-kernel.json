@@ -1,0 +1,13 @@
+{
+  "source_public_control_chain_state": "TACHYRIUM_V010_PUBLIC_CONTROL_CHAIN_OPEN",
+  "source_public_control_intake_sha": "28257ed73cbf1f13a4a641f80785277693703149",
+  "answers": "WHAT_CANDIDATE_UNDERSTANDING_IS_LAWFUL",
+  "role": "COGNITION_CHAMBER",
+  "system_complete": false,
+  "constraints": {
+    "real_writer": false,
+    "token_persistence": false,
+    "truth_mutation": false
+  },
+  "next_valid_action": "PUBLISH_TACHYRIUM_V010_PUBLIC_CONTROL_SEAL"
+}
